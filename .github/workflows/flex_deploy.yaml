@@ -48,6 +48,9 @@ on:
         default: false
         description: Overwrite config set by Admin UI Panel?
 
+  push:
+    branches:
+      - main
 concurrency:
   group: flex-deploy-${{ inputs.environment || github.event.inputs.environment }}
 
